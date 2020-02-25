@@ -1,0 +1,15 @@
+spring:
+ application: 
+  name: spring-cloud-server
+ cloud: 
+  config: 
+    server: 
+      git:
+        uri: https://github.com/rajs24/sbt-cloud-config.git
+        #git local repository file path
+        #uri: file:/C:/config
+        search-paths: config/movie-*,config/discovery-server
+        #search-paths: config/movie-*
+        
+server: 
+ port: 8085
